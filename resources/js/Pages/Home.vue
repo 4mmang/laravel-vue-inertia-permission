@@ -1,5 +1,14 @@
+<script setup>
+import Master from '@/Layouts/Master.vue';
+import { Head, useForm } from '@inertiajs/vue3';
+</script>
+
 <template>
-  <div class="text-red-500 text-3xl font-bold">
-    Tailwind Test
-  </div>
+
+    <Head title="Home" />
+    <Master>
+        <section class="mt-3">
+            Belajar Vue JS 
+        </section>
+    </Master>
 </template>
