@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue';
+import { Link } from '@inertiajs/vue3';
+
 const showingNavigationDropdown = ref(false);
 </script>
 <template>
@@ -17,21 +19,19 @@ const showingNavigationDropdown = ref(false);
             <div class="flex flex-1 items-center justify-end md:justify-between">
                 <!-- Desktop Menu -->
                 <nav aria-label="Global" class="hidden md:block">
-                    <ul class="flex items-center gap-6 text-sm">
+                    <ul class="flex items-center gap-10 text-sm">
+                        <li><a class="text-gray-500 transition hover:text-gray-500/75" href="#">Home</a></li>
                         <li><a class="text-gray-500 transition hover:text-gray-500/75" href="#">About</a></li>
                         <li><a class="text-gray-500 transition hover:text-gray-500/75" href="#">Careers</a></li>
                         <li><a class="text-gray-500 transition hover:text-gray-500/75" href="#">History</a></li>
                         <li><a class="text-gray-500 transition hover:text-gray-500/75" href="#">Services</a></li>
                         <li><a class="text-gray-500 transition hover:text-gray-500/75" href="#">Projects</a></li>
-                        <li><a class="text-gray-500 transition hover:text-gray-500/75" href="#">Blog</a></li>
                     </ul>
                 </nav>
 
                 <div class="flex items-center gap-4">
                     <div class="sm:flex sm:gap-4">
-                        <a class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
-                            href="#">Login</a>
-
+                        <Link :href="route('login')" class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700">Login</Link>
                         <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block"
                             href="#">Register</a>
                     </div>

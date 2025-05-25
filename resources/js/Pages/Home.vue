@@ -1,14 +1,13 @@
 <script setup>
-import Master from '@/Layouts/Master.vue';
+import App from '@/Layouts/App.vue';
 import { Head, useForm } from '@inertiajs/vue3';
 </script>
 
 <template>
 
     <Head title="Home" />
-    <Master>
+    <App>
         <section class="mt-3">
-            Belajar Vue JS 
         </section>
-    </Master>
+    </App>
 </template>

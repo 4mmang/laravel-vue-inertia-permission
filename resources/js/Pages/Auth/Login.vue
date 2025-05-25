@@ -3,7 +3,7 @@ import TextInput from '@/Components/TextInput.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import InputError from '@/Components/InputError.vue';
-import { useForm } from '@inertiajs/vue3';
+import { useForm, Link } from '@inertiajs/vue3';
 
 const form = useForm({
   email: '',
@@ -20,8 +20,8 @@ const submit = () => {
   <div class="flex items-center justify-center min-h-screen bg-gray-100">
     <div class="w-full max-w-md">
       <div class="block rounded-md border border-gray-300 p-4 shadow-sm sm:p-6">
-        <h1 class="text-3xl font-bold">Form Login</h1>
-        <p class="mb-5 mt-1">Laravel + Vue + TailwindCSS</p>
+        <Link :href="route('home')" class="text-3xl font-bold">SPACE GROW</Link>
+        <p class="mb-5 mt-1">Together to The Top</p>
 
         <form @submit.prevent="submit">
 
