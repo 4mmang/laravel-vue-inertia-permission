@@ -5,6 +5,7 @@ defineOptions({ layout: MasterLayout });
 </script>
 
 <template>
-    <h1>Welcome to your Dashboard!</h1>
-    <p>This content is rendered inside the MasterLayout's slot.</p>
+    <div v-if="$page.props.auth.permissions.includes('view name')">
+        <h1>Welcome to your Dashboard! {{ $page.props.auth.user.name }}</h1>
+    </div>
 </template>

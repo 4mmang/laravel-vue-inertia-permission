@@ -36,7 +36,7 @@ const handleSidebarVisibilityUpdate = (isVisible) => {
                     <a href="https://flowbite.com" class="flex ms-2 md:me-24">
                         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
                         <span
-                            class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Flowbite</span>
+                            class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">SPACE GROW</span>
                     </a>
                 </div>
                 <div class="flex items-center">
@@ -61,7 +61,7 @@ const handleSidebarVisibilityUpdate = (isVisible) => {
                                 </p>
                             </div>
                             <ul class="py-1" role="none">
-                                <li>
+                                <!-- <li>
                                     <a href="#"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem">Dashboard</a>
@@ -75,7 +75,7 @@ const handleSidebarVisibilityUpdate = (isVisible) => {
                                     <a href="#"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem">Earnings</a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="#"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
